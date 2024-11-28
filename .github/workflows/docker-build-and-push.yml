@@ -38,19 +38,9 @@ jobs:
       # שלב 3: בניית Docker Image
       - name: Build Docker image
         run: |
- feature/new-branch
           docker build -t 686255965392.dkr.ecr.il-central-1.amazonaws.com/calculator-app:1.1 .
-
-          docker build -t 686255965392.dkr.ecr.il-central-1.amazonaws.com/calculator-app:1.1 .
- 
 
       # שלב 4: דחיפת Docker Image ל-ECR
       - name: Push Docker image to Amazon ECR
         run: |
- feature/new-branch
-          docker tag 686255965392.dkr.ecr.il-central-1.amazonaws.com/calculator-app:1.1 686255965392.dkr.ecr.il-central-1.amazonaws.com/calculator-app:1.1
           docker push 686255965392.dkr.ecr.il-central-1.amazonaws.com/calculator-app:1.1
-
-          docker tag 686255965392.dkr.ecr.il-central-1.amazonaws.com/calculator-app:1.1 686255965392.dkr.ecr.il-central-1.amazonaws.com/calculator-app:1.1
-          docker push 686255965392.dkr.ecr.il-central-1.amazonaws.com/calculator-app:1.1
- 
