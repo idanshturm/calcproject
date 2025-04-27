@@ -8,13 +8,6 @@ on:
       - "Dockerfile"           # ירוץ אם ה-Dockerfile משתנה
       - "index.html"           # ירוץ אם index.html משתנה
       - ".github/workflows/**" # ירוץ אם ה-Workflow עצמו משתנה
-  pull_request:
-    branches:
-      - main
-    paths:
-      - "Dockerfile"
-      - "index.html"
-      - ".github/workflows/**"
 
 jobs:
   build-and-push:
