@@ -1,5 +1,5 @@
 # השתמש ב-NGINX כבסיס
-FROM nginx:latest
+FROM nginx:1.25.3
 
 # העתק את קובץ ה-HTML לתוך התיקייה של NGINX
 COPY index.html /usr/share/nginx/html/
